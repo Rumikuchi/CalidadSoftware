@@ -26,9 +26,9 @@ public class AdminLoginServlet extends GenericServlet {
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
 				RequestDispatcher rd = req.getRequestDispatcher("Sample.html");
-				
-				Cookie ck = new Cookie("usertype","admin");
-				
+
+Cookie ck = new Cookie("usertype","admin");
+
 				rd.include(req, res);
 				pw.println("<div class=\"tab\">Admin login Successful</div>");
 				pw.println("<div class=\"tab\"><br/><a href=\"AddBook.html\">ADD BOOKS</a><br/></div>");
