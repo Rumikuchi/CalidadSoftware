@@ -1,8 +1,8 @@
 package servlets;
 
 import javax.servlet.*;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpSession;
+//import javax.servlet.http.Cookie;
+//import javax.servlet.http.HttpSession;
 
 import constants.IOnlineBookStoreConstants;
 import sql.IUserContants;
@@ -27,7 +27,7 @@ public class AdminLoginServlet extends GenericServlet {
 			if (rs.next()) {
 				RequestDispatcher rd = req.getRequestDispatcher("Sample.html");
 
-Cookie ck = new Cookie("usertype","admin");
+//Cookie ck = new Cookie("usertype","admin");
 
 				rd.include(req, res);
 				pw.println("<div class=\"tab\">Admin login Successful</div>");

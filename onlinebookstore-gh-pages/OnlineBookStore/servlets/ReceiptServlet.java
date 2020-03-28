@@ -62,10 +62,11 @@ public class ReceiptServlet extends GenericServlet {
 						ps1.executeUpdate();
 					}
 				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 			pw.println("</table><br/><div class='tab'>Total Paid Amount: " + total + "</div>");
-			String fPay = req.getParameter("f_pay");
+			//String fPay = req.getParameter("f_pay");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

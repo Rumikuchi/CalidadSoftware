@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.RequestDispatcher;
@@ -48,7 +49,7 @@ public class AddBookServlet extends GenericServlet{
 				rd.include(req, res);
 			}
 		}
-		catch(Exception e)
+		catch(SQLException e)
 		{
 			e.printStackTrace();
 		}

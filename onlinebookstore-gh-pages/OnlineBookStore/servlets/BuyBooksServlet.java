@@ -5,7 +5,7 @@ import javax.servlet.*;
 
 import constants.IOnlineBookStoreConstants;
 import sql.IBookConstants;
-import sql.IUserContants;
+//import sql.IUserContants;
 public class BuyBooksServlet extends GenericServlet{
 	public void service(ServletRequest req,ServletResponse res) throws IOException,ServletException
 	{

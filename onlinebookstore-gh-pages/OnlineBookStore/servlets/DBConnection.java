@@ -1,6 +1,6 @@
 package servlets;
 import java.sql.*;
-import java.util.ResourceBundle;
+//import java.util.ResourceBundle;
 
 import constants.IDatabase;
 
@@ -23,7 +23,7 @@ public class DBConnection {
 		
 		try {
 			
-			con = DriverManager.getConnection(IDatabase.CONNECTION_STRING, IDatabase.USER_NAME, IDatabase.PASSWORD);
+			con = DriverManager.getConnection(IDatabase.CONNECTION_STRING, IDatabase.USER_NAME, IDatabase.PASSWORD());
 		
 		}
 		catch (SQLException e) {

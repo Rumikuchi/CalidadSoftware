@@ -3,7 +3,7 @@ import java.io.*;
 import java.sql.*;
 import javax.servlet.*;
 
-import constants.IOnlineBookStoreConstants;
+//import constants.IOnlineBookStoreConstants;
 import sql.IBookConstants;
 
 public class ViewBookServlet extends GenericServlet{
